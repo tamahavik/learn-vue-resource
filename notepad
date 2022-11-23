@@ -1,0 +1,28 @@
+v-model for text input population
+interpolation : {{}}
+v-bind
+methods
+this keyword for refert to data object from method
+v-html for bind html from java script
+v-model is sortcut for v-bind:value and v-on:input
+method not best for output dynamic in vue
+computed : only use when ooutput value
+watch : execute when data properties with same name as watcher when data properties change
+computed vs watch 
+computed good for calculation for data properties
+watch good for something change when data properties change
+-----------------------------------------------------------------------------------------
+method: 
+1. use with event binding or data binding
+2. re execute for every re-render cycle
+3. use for event or data that really need to re evaluated all time
+
+computed:
+1. use with data binding
+2. only re-evaluated when one of used values change
+3. use for data that depent on other data
+
+watch:
+1. Not use direcly in template
+2. Allow to run any code in reaction of data change (ex : HTTP request)
+3. user for any non data update you want to make
